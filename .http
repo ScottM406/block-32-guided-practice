@@ -15,4 +15,15 @@ Content-Type: application/json
   "text": "lorem ipsum"
 }
 
-### TODO: Add more requests to test
+### Requests that throw an error
+
+### GET non-existant note
+GET {{host}}/notes/100
+
+### POST without text 
+POST {{host}}/notes
+Content-Type: application/json
+
+{
+  "numberarray": [1,2,3,4,5]
+}
